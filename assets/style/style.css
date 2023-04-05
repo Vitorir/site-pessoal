@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --Fonte: 'Lato', sans-serif;
+    --color-background: #000;
+    --color-font: #fff;
+    --cor-botoes: #6f0404;
+    --cor-hover: #b40707;
+}
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(/assets/img/black-texture.jpg);
+    background-size: cover; /* Adaptar imagem à tela sem distorcer */
+    display: flex; /* Dá responsividade ao conteúdo, impondo flexibidade aos seus filhos */
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}   
+
+.link-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background);
+    width: 350px;
+    border-radius: 7%;
+    color: var(--color-font);
+}
+
+.link-bio img {
+    width: 40%;
+    height: 20%;
+    border-radius: 50%;
+    margin: 1.2rem;
+}
+
+.link-bio h1 {
+    font-size: 3rem;
+    color: var(--cor-botoes);
+}
+
+.link-bio p {
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+    font-family: var(--Fonte);
+}
+
+.link-bio a {
+    background: var(--cor-botoes);
+    color: #fff;
+    text-align: center;
+    width: 90%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.link-bio a:hover {
+    background-color: var(--cor-hover);
+}
